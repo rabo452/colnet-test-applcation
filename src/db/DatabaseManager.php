@@ -2,6 +2,8 @@
 
 require_once ROOT_DIR . '/models/RequestStatistic.php';
 
+// interface for database manager
+// if you need to change database, you'll need to just create a new manager that supports these operations (methods)
 interface DatabaseManager {
     public function getUrlsCountDomain(string $domain): int;
     public function getTodayAvgDomainsFetchTime(string $domain): int;
