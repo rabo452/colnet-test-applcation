@@ -1,0 +1,11 @@
+test task for colnet job applcation:
+
+the project is landing page that takes information about other websites and gathering statistic.
+
+How to deploy?
+1. download repository.
+2. go to your mysql database server and create database named "colnet".
+3. run sql code from tables.sql file.
+4. change the src/config.php file according to your settings. 
+5. set all files into apache server with php 7.4+ support on board
+6. run the server and enjoy the applcation.
