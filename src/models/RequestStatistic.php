@@ -1,11 +1,12 @@
 <?php 
 
+// data class for holding request statistic about request
 class RequestStatistic {
-    private string $response_time;
-    private string $element_tag;
-    private string $request_date;
-    private string $url;
-    private int $element_tag_count;  
+    private string $response_time; // response time (time between sending and receiving the response)
+    private string $element_tag; // element tag that was counted
+    private string $request_date; // the date when the request was made   
+    private string $url; // url user provided
+    private int $element_tag_count; // count of tags in the url
 
     public function __construct(string $response_time, string $element_tag, string $request_date, int $element_tag_count, string $url) {
         $this->response_time = $response_time;
