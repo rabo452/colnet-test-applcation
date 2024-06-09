@@ -1,5 +1,5 @@
 <?php 
-
+// data class for holding http request results 
 class RequestResult {
     private string $response_time;
     private string $response;
