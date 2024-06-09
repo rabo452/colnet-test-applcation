@@ -1,5 +1,5 @@
 <?php
-
+// data class for holding general statistic about pages
 class GeneralStatistic {
     private string $domain;
     private string $html_element; 
