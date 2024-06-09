@@ -60,6 +60,13 @@ formBtn.addEventListener('click', (e) => {
         }
     }).then((msg) => {
         let response = JSON.parse(msg);
+        
+        // if there is mistake message, show it
+        if ("message" in response) {
+            errorBlock.innerHTML = response['message'];
+            return;
+        }
+        
         var pageStatistic = response.page_statistic;
         var generalStatistic = response.general_statistic;
         
