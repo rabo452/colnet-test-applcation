@@ -6,7 +6,6 @@ function getDomainFromUrl($url) {
     
     if (isset($matches[1])) {
         return $matches[1];
-    } else {
-        throw new Exception("unable to get domain from this url: $url");
-    }
+    } 
+    throw new Exception("unable to get domain from this url: $url");
 }
